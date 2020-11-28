@@ -10,7 +10,7 @@
 1. リポジトリをクローン
 
    ```
-   git clone https://gitlab.com/welcome-to-sodai/node.git node_app/nodock
+   git clone https://gitlab.com/welcome-to-sodai/node.js.git node_app/nodock
    ```
 
 2. nodockの階層で
