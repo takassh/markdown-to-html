@@ -1,43 +1,12 @@
-# Node.js環境構築
+# これは
+- javascriptでmarkdownをパースする
+- markdown -> html　への変換
 
-- node.jsの環境です。これ単体で使うことはないと思いますが、手軽にサーバー環境を試したいときなどに使ってください。
+# 使い方
+- `docker-compose up -d node`
+- `docker-compose exec node bash`
+- `node app.js`
 
-- dockerを使ったnodeの環境構築なのでnodockと名付けています。
-
-
-## NoDock
-
-1. リポジトリをクローン
-
-   ```
-   git clone https://gitlab.com/welcome-to-sodai/node.js.git node_app/nodock
-   ```
-
-2. nodockの階層で
-
-   ```
-   docker-compose up -d node
-   ```
-
-
-## 使い方
-
-- 始めるとき nodockの階層で
-   ```bash
-   docker-compose up -d node
-   ```
-- 終わるとき
-   ```bash
-   docker-compose down
-   ```
-
-## まとめ
-
-- Node.jsの環境構築ができた
-
-## Next Step
-
-- node.jsで手軽にfirebaseを試したいときとかに使うのかな
-- [expressを使いたいとき](https://qiita.com/nkjm/items/723990c518acfee6e473)
-
-   
+# 注意
+- cssがtailwindなのでliなどに個別にclassを付与する必要あり
+- custom/tailwind.cssに書き込み、`npx tailwindcss-cli@latest build ./custom/tailwind.css -o ./dist/tailwind.css`を実行
